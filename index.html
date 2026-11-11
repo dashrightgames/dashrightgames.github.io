@@ -36,7 +36,9 @@ p{margin:0 0 1em}
 .bar{position:sticky;top:0;z-index:10;background:rgba(18,10,34,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar .wrap{display:flex;align-items:center;gap:1.5rem;height:58px}
 .studio{font:900 1.05rem var(--head);letter-spacing:.18em;color:var(--paper);text-decoration:none;white-space:nowrap}
-.studio span{color:var(--mint)}
+.studio{display:flex;align-items:center}
+.studio img{height:42px;width:auto;image-rendering:pixelated}
+footer .studio img{height:34px}
 .bar nav{margin-left:auto;display:flex;gap:1.25rem;overflow-x:auto}
 .bar nav a{color:var(--muted);text-decoration:none;font-size:.92rem;white-space:nowrap}
 .bar nav a:hover{color:var(--paper)}
@@ -111,7 +113,7 @@ dialog button{position:fixed;top:14px;right:18px;background:none;border:0;color:
 
 <header class="bar">
   <div class="wrap">
-    <a class="studio" href="#top">DASH<span>RIGHT</span></a>
+    <a class="studio" href="#top"><img src="assets/dashright-logo.svg" alt="Dash Right" width="61" height="25"></a>
     <nav aria-label="Sections">
       <a href="#trailer">Trailer</a>
       <a href="#features">Features</a>
@@ -240,6 +242,7 @@ dialog button{position:fixed;top:14px;right:18px;background:none;border:0;color:
       </dl>
       <div class="press">
         <a href="assets/logo.png" download>Logo (PNG)</a>
+        <a href="assets/dashright-logo.png" download>Studio logo (PNG)</a>
         <a href="assets/capsule.png" download>Key art</a>
         <a href="assets/hero.png" download>Wide banner</a>
         <a href="assets/trailer.mp4" download>Trailer (MP4)</a>
@@ -259,6 +262,7 @@ dialog button{position:fixed;top:14px;right:18px;background:none;border:0;color:
 
 <footer>
   <div class="wrap">
+    <a class="studio" href="#top"><img src="assets/dashright-logo.svg" alt="Dash Right" width="61" height="25" loading="lazy"></a>
     <span>© 2026 Dash Right</span>
     <span>Oxidojo is in development. Details may change before release.</span>
   </div>
